@@ -1,1 +1,1 @@
-# sumitup
+# SumItUp - AI Powered PDF Summarizer.
