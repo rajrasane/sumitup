@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/common/header";
 import Footer from "@/components/common/footer";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const fontSans = FontSans({
   variable: "--font-sans",
   subsets: ["latin"],
@@ -33,6 +35,8 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
     </ClerkProvider>
