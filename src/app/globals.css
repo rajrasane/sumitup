@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
 html{
   @apply scroll-smooth;
@@ -8,9 +7,6 @@ html{
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
 
@@ -69,9 +65,7 @@ html{
 }
 
 @layer utilities {
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  /* Removed custom font settings */
 }
 
 @layer base {
@@ -154,22 +148,6 @@ html{
   button {
     @apply hover:cursor-pointer bg-rose-600 hover:bg-rose-700;
   }
-
-  @keyframes gradient-x {
-    0%,
-    100% {
-      background-size: 200% 100%;
-      background-position: left center;
-    }
-    50% {
-      background-size: 200% 100%;
-      background-position: right center;
-    }
-  }
-
-  .animate-gradient-x {
-    animation: gradient-x 3s ease infinite;
-  }
 }
 
 @utility container {
@@ -182,3 +160,4 @@ html{
     max-width: 1400px;
   }
 }
+

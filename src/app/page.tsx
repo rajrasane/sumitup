@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <div className="relative w-full">
       <SmoothScroll />
-      <BgGradient />
+      {/* <BgGradient /> */}
       <div className="flex flex-col ">
-        <HeroSection />
+        <HeroSection /> 
         <DemoSection />
         <HowItWorksSection />
         <PricingSection />
