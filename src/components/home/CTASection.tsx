@@ -13,18 +13,20 @@ const CTASection = () => {
                     </div>  
                     <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
                         <div>
-                            <Button 
-                                variant={'link'} 
-                                className="w-full min-[400px]:w-auto bg-linear-to-r from-slate-900 to-rose-500 hover:from-rose-500 hover:to-slate-900 hover:text-white text-white"
-                                size={"lg"}
-                            >
-                                <Link 
-                                    href='/#pricing' 
-                                    className="flex items-center justify-center"
+                            <Link href="/#pricing">
+                                <Button 
+                                    variant={'link'} 
+                                    className="w-full min-[400px]:w-auto bg-linear-to-r from-slate-900 to-rose-500 hover:from-rose-500 hover:to-slate-900 hover:text-white text-white hover:no-underline"
+                                    size={"lg"}
                                 >
-                                    Get Started <ArrowRight size={18} className="ml-2 h-4 w-4"/>
-                                </Link>
-                            </Button>
+                                    <Link 
+                                        href='/#pricing' 
+                                        className="flex items-center justify-center"
+                                    >
+                                        Get Started <ArrowRight size={18} className="ml-2 h-4 w-4 "/>
+                                    </Link>
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
