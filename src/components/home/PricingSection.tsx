@@ -58,6 +58,7 @@ const PricingCard = ({name , price , description , items , id , paymentLink , pr
           </div>
         </div>
         <div className="space-y-2.5 leading-relaxed text-base flex-1">
+          <ul className="list-none">
           {
             items.map((item, index) => (
               <li key={index} className="flex items-center gap-2">
@@ -66,6 +67,7 @@ const PricingCard = ({name , price , description , items , id , paymentLink , pr
               </li>
             ))
           }
+          </ul>
         </div>
         <div className="space-y-2 flex justify-center w-full">
           <Link href={paymentLink} className={cn("w-full rounded-full flex items-center justify-center gap-2 bg-linear-to-r from-rose-800 to-rose-500 hover:from-rose-500 hover:to-rose-800 text-white border-2 py-2", id === 'pro' ? 'border-rose-900' : 'border-rose-100 from-rose-400 to-rose-500' )}>Buy Now <ArrowRight size={18}/> </Link>
